@@ -2,6 +2,7 @@ language: python
 python:
   - "3.6"
 install:
+  - pip install --upgrade pip
   - pip install -r requirements-dev.txt
 script:
   - cp django_airavata/settings_local.py.sample django_airavata/settings_local.py
